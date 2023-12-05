@@ -1,0 +1,22 @@
+.eas-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(67, 121, 201);
+    width: 960px;
+    height: 960px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.square {
+    outline: 1px solid;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

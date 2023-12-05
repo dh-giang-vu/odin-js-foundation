@@ -12,7 +12,7 @@ function makeSquares(numSquares) {
         alert("Maximum dimension is 100x100");
         return;
     }
-    
+
     removeSquares();
 
     for (let i = 0; i < numSquares*numSquares; i++) {
@@ -37,4 +37,6 @@ container.addEventListener("mouseover", (event) => {
         target.style.backgroundColor = "black";
     }
 })
+
+window.onload = () => makeSquares(16);
 

@@ -38,6 +38,11 @@ html {
     outline: auto;
  }
 
+ .display p {
+   margin: 0;
+   padding: 5%;
+ }
+
 .controls-container {
     background-color: grey;
     margin: auto;

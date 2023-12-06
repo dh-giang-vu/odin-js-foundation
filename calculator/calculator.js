@@ -26,7 +26,6 @@ function performOperation() {
     for (let i = 0; i < input.length; i++) {
         if (isDigit(input[i]) === false) {
             op = input[i];
-            console.log(op, input[i]);
             continue;
         }
 
@@ -50,7 +49,6 @@ function performOperation() {
             break;
         case "*":
             result = first * second;
-            console.log("m" + result);
             break;
         case "/":
             if (second === 0) {
@@ -79,9 +77,6 @@ clear.addEventListener("click", () => {
     display.textContent = "";
     input = [];
     hasOp = false;
-
-    console.log(input);
-    console.log(hasOp);
 });
 
 
@@ -95,10 +90,6 @@ del.addEventListener("click", () => {
         hasOp = false;
     }
     input.pop();
-
-    // Sanity Check
-    console.log(input);
-    console.log(hasOp);
 }) 
 
 
@@ -112,7 +103,6 @@ buttons.forEach(function(button) {
     
         if (button.textContent === "=") {
             display.textContent = performOperation()
-            console.log("Perform operation");
             hasOp = false;
             return;
         }
@@ -123,7 +113,6 @@ buttons.forEach(function(button) {
             }
             if (hasOp) {
                 display.textContent = performOperation();
-                console.log("Perform operation");
             }
             else {
                 hasOp = true;
@@ -133,8 +122,6 @@ buttons.forEach(function(button) {
         input.push(button.textContent);
         display.textContent += button.textContent;
     
-        console.log(input);
-        console.log(hasOp);
     })
 })
 
